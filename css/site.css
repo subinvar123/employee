@@ -1,0 +1,19 @@
+#mainnavbar .nav-item {
+    color: white;
+}
+body {
+    background: white;
+    background-color: coral;
+}
+.navbar {
+    font-size: 1.5rem;
+    font-weight: 100;    
+}
+
+.page-footer{
+    background-color: black;
+    color:white;
+}
+#mainnavbar .nav-link:hover {
+    color: yellowgreen;
+}
