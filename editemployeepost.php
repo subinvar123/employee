@@ -8,8 +8,9 @@ if(isset($_POST['submit'])){
     $password = $_POST['password'];
     $address = $_POST['address'];
     $user_id =$_POST['user_id'];
-
-    $result = $crud->updateattendee($fname ,$lname  ,$email ,$password ,$address ,$doj  ,$user_id);
+    $new_password = md5($password.$username);
+  
+    $result = $crud->updateattendee($fname ,$lname  ,$email , $new_password ,$address ,$doj  ,$user_id);
 //redirect to index page
 if($result){
     header("Location: viewallrecord.php");

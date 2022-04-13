@@ -5,7 +5,14 @@ $title='index';
 
  ?>
  </br></br></br></br>
-    <h1 class="text-center">Registration</h1>
+ <div class="content pb-0 content-main">
+            <div class="animated fadeIn">
+               <div class="row">
+              
+                  <div class="col-lg-12">
+                     <div class="card">
+                        <div class="card-header"><strong>Registration</strong><small> Form</small></div>
+                        <div class="card-body card-block">
     <form method="post" action="sucess.php" enctype="multipart/form-data">
     <div class="form-group">
     <label for="name">firstname</label>
@@ -40,5 +47,12 @@ $title='index';
 </br>
   <button type="submit" name="submit" class="btn btn-primary btn-block">Submit</button>
 </form>
+</div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+                  
 </br>
     <?php require_once 'includes/footer.php' ;?>

@@ -33,10 +33,10 @@ $atle='attendance';
      <!-- <th scope="col">id</th>
       <th scope="col">user_id</th>-->
       <th scope="col">Name</th>
-      <th scope="col">task</th>
-      <th scope="col">date</th>
-      <th scope="col">start_time</th>
-      <th scope="col">end_time</th>
+      <th scope="col">Task</th>
+      <th scope="col">Date</th>
+      <th scope="col">Start time</th>
+      <th scope="col">End time</th>
     
     </tr>
   </thead>
@@ -67,11 +67,11 @@ $atle='attendance';
   <thead>
     <tr>
     <th scope="col">Name</th>
-      <th scope="col">leave type</th>
-      <th scope="col">status</th>
-      <th scope="col">start date</th>
-      <th scope="col">end date</th>
-      <th scope="col">action</th>
+      <th scope="col">Leave type</th>
+      <th scope="col">Status</th>
+      <th scope="col">Start date</th>
+      <th scope="col">End date</th>
+      <th scope="col">Action</th>
     
     </tr>
   </thead>
@@ -89,14 +89,20 @@ $atle='attendance';
       else{echo "waiting for Approval";} ?></td>
       <td><?php echo $r['start_date'] ?></td>
       <td><?php echo $r['end_date'] ?></td>
-      <?php
-      if($r['status']==0){?>
-      <td><a href="approveleave.php?id=<?php echo $r['id'] ?>" class="btn btn-primary">Approve</a>
-      <td><a href="rejectleave.php?id=<?php echo $r['id'] ?>" class="btn btn-warning">Reject</a>
-      <?php } ?>
+      
+      <?php 
+      $class_disable="";
+      if($r['status']!=0){
+        $class_disable="disabled";
+      }
+      ?>
+      <td><a href="approveleave.php?id=<?php echo $r['id'] ?>" class="btn btn-primary <?php echo $class_disable;?>">Approve</a>
+      <a href="rejectleave.php?id=<?php echo $r['id'] ?>" class="btn btn-warning <?php echo $class_disable;?>">Reject</a>
+      
     </td>
     </tr>
    <?php } ?>
   </tbody>
 </table>
 <?php } ?>
+<?php require_once 'includes/footer.php' ;?>

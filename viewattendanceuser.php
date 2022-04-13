@@ -13,11 +13,11 @@ $title='view records';
     <!--<th scope="col">id</th>
       <th scope="col">user_id</th>-->
       <th scope="col">Name</th>
-      <th scope="col">task</th>
-      <th scope="col">date</th>
-      <th scope="col">start_time</th>
-      <th scope="col">end_time</th>
-      <th scope="col">action</th>
+      <th scope="col">Task</th>
+      <th scope="col">Date</th>
+      <th scope="col">Start time</th>
+      <th scope="col">End time</th>
+      <th scope="col">Action</th>
     </tr>
   </thead>
   <tbody>

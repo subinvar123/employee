@@ -11,12 +11,12 @@ $result = $crud->getemployee();
   <thead>
     <tr>
       <th scope="col">user</th>
-      <th scope="col">first name</th>
-      <th scope="col">last name</th>
-      <th scope="col">email</th>
-      <th scope="col">address</th>
-      <th scope="col">date of joining</th>
-      <th scope="col">actions</th>
+      <th scope="col">First name</th>
+      <th scope="col">Last name</th>
+      <th scope="col">Email</th>
+      <th scope="col">Address</th>
+      <th scope="col">Date of joining</th>
+      <th scope="col">Actions</th>
     </tr>
   </thead>
   <tbody>

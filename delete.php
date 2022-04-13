@@ -9,6 +9,7 @@ if(!isset($_GET['id'])){
    
  }
 else{
+    
     $id = $_GET['id'];
     $result =$crud->deleteattendee($id);
     if($result)

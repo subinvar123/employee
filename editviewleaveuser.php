@@ -19,6 +19,15 @@ else{
  
  ?>
 <h1 class="text-center">Update Leave</h1>
+
+    <div class="content pb-0 content-main">
+            <div class="animated fadeIn">
+               <div class="row">
+              
+                  <div class="col-lg-12">
+                     <div class="card">
+                       
+                        <div class="card-body card-block">
     <form method="post" action="editviewleaveuserpost.php" enctype="multipart/form-data">
     <input type="hidden" name="id" value="<?php echo  $result['id'] ?>" />
    
@@ -45,7 +54,12 @@ else{
  
 </br>
   <button type="submit" name="submit" class="btn btn-primary btn-block">Submit</button>
-</form>
+</form></div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
 
 
 

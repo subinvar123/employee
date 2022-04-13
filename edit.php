@@ -19,6 +19,14 @@ else{
  
  ?>
     <h1 class="text-center">Edit Details</h1>
+    <div class="content pb-0 content-main">
+            <div class="animated fadeIn">
+               <div class="row">
+              
+                  <div class="col-lg-12">
+                     <div class="card">
+                       
+                        <div class="card-body card-block">
     <form method="post" action="editpost.php">
       <input type="hidden" name="user_id" value="<?php echo  $result['user_id'] ?>" />
       <div class="form-group">
@@ -54,6 +62,13 @@ else{
 </br>
   <button type="submit" name="submit" class="btn btn-primary btn-block">Submit</button>
 </form>
+</div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+                  
 <?php }?>
 </br>
     <?php require_once 'includes/footer.php' ;?>

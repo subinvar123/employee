@@ -13,10 +13,10 @@ $title='view leave';
     <!--<th scope="col">id</th>-->
     
       <th scope="col">Name</th>
-      <th scope="col">leave type</th>
-      <th scope="col">status</th>
-      <th scope="col">start date</th>
-      <th scope="col">end date</th>
+      <th scope="col">Leave type</th>
+      <th scope="col">Status</th>
+      <th scope="col">Start date</th>
+      <th scope="col">End date</th>
       
   </thead>
   <tbody>
@@ -32,10 +32,16 @@ $title='view leave';
       <td><?php echo $r['start_date'] ?></td>
       <td><?php echo $r['end_date'] ?></td>
       
- 
-      <td><a href="editviewleaveuser.php?id=<?php echo $r['id'] ?>" class="btn btn-warning">edit</a>
+      <?php 
+      $class_disable="";
+      if($r['status']!=0){
+        $class_disable="disabled";
+      }
+      ?>
+
+      <td><a href="editviewleaveuser.php?id=<?php echo $r['id'] ?>" class="btn btn-warning <?php echo $class_disable;?>">edit</a>
       <td><!--<a href="deleteviewleaveuser.php?id=<//?php echo $r['id'] ?>" class="btn btn-danger">delete</a>-->
-      <a onclick="return confirm('Are you sure you want to delete this record?');" href="deleteviewleaveuser.php?id=<?php echo $r['id'] ?>" class="btn btn-danger">Delete</a>
+      <a onclick="return confirm('Are you sure you want to delete this record?');" href="deleteviewleaveuser.php?id=<?php echo $r['id'] ?>" class="btn btn-danger <?php echo $class_disable;?>">Delete</a>
     </td>
     </tr>
    <?php } ?>

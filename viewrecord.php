@@ -20,6 +20,14 @@ $title='view records';
 
 
 </br></br></br></br></br></br>
+<div class="content pb-0 content-main">
+            <div class="animated fadeIn">
+               <div class="row">
+              
+                  <div class="col-lg-12">
+                     <div class="card">
+                       
+                        <div class="card-body card-block">
 <form method="post" action="viewattendance.php" enctype="multipart/form-data">
 
 <div class="form-group">
@@ -69,4 +77,11 @@ $title='view records';
   </div></br>
   <button type="submit" name="submit" class="btn btn-primary btn-block">Submit</button>
   </form>
+  </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+                  
   <?php require_once 'includes/footer.php' ;?>
